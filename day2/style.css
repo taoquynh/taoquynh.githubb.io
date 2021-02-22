@@ -1,0 +1,19 @@
+/* Đây là chú thích trong file CSS */
+* {
+    margin: 0;
+}
+
+.truyen-kieu {
+    font-size: 24px !important;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5; /*khoảng cách giữa các dòng*/
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: blueviolet;
+    padding: 10px; 
+}
+
+.truyen-kieu {
+    font-size: 30px;
+}
