@@ -17,3 +17,23 @@
 .truyen-kieu {
     font-size: 30px;
 }
+ .hinh{
+     width: 100px;
+     height: 100px;
+ }
+ #float{
+     border: 2px solid brown ;
+ }
+ #mot{
+     background-color: chartreuse;
+      
+ }
+ #hai{
+    height:200px ; 
+    background-color: red;
+     float: right;
+}
+.clear{
+    clear: both;
+}
+
