@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="start()">Start</button>
+    <button onclick="end()">End</button>
+    <button id="go">Go</button>
+    <input type="text" id="newInput" onchange="" />
+    <script>
+      function start() {
+        console.log("start");
+      }
+      function end() {}
+      function go() {
+        console.log("Ham: go");
+      }
+      let goButton = document.getElementById("go");
+
+      goButton.addEventListener("click", go);
+
+      goButton.addEventListener("click", function () {
+        console.log("callback: go");
+      });
+
+      document.getElementById("go").addEventListener("click", go);
+
+      document.getElementById("go").addEventListener("click", function () {
+        console.log("get element");
+      });
+
+      document.addEventListener("click", function () {
+        document.getElementsByTagName("body")[0].style.backgroundColor =
+          "yellow";
+      });
+
+      document
+        .getElementById("newInput")
+        .addEventListener("change", function () {
+          console.log(document.getElementById("newInput").value);
+        });
+    </script>
+  </body>
+</html>

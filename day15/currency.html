@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <span class="inplabel">Số lượng:</span>
+        <input id="number" type="number" name="amount" min="0" />
+      </div>
+      <div>
+        <span class="inplabel">Từ:</span>
+        <select id="from" name="from">
+          <option value="GBP">Bảng Anh (GBP)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="VND">Việt Nam Đồng (VND)</option>
+          <option value="USD" selected="">Đô la Mỹ (USD)</option>
+        </select>
+      </div>
+      <div>
+        <span class="inplabel">Sang: </span>
+        <select id="to" name="to">
+          <option value="GBP">Bảng Anh (GBP)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="VND">Việt Nam Đồng (VND)</option>
+          <option value="USD" selected="">Đô la Mỹ (USD)</option>
+        </select>
+        <p id="output"></p>
+      </div>
+      <div>
+        <span class="inplabel"></span>
+        <input type="submit" value="Chuyển đổi" onclick="quyDoiTienTe()" />
+      </div>
+    </div>
+    <script src="./currency.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chua bai</title>
+</head>
+<body>
+    <script>
+
+        function doiDoC (f){
+            let c = (f-32)/1.8;
+            return c
+        }
+
+        let doC = doiDoC(212) + 23
+
+        function doiDof (c){
+            let f = (c*1.8) + 32
+            return f
+        }
+
+        function theky(n){
+            let nam = Math.floor((n-1)/100)+1; // C1
+            let theky = Math.ceil(n/100); // C2
+            return theky;
+        }
+
+        console.log(theky(2005));
+        
+    </script>
+</body>
+</html>

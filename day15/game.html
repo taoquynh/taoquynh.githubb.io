@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess</title>
+    <style>
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 22px;
+      }
+
+      input {
+        margin-right: 10px;
+        width: 50%;
+        height: 20px;
+        font-size: 15px;
+        padding-left: 5px;
+      }
+
+      input:focus {
+        outline: none;
+        border: 1px solid rgb(52, 177, 196);
+      }
+
+      button {
+        height: 25px;
+      }
+
+      #parent {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 30%;
+        margin-top: -20%;
+        margin-left: -15%;
+        background-color: rgb(229, 255, 249);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
+
+      .action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #result {
+        text-align: left;
+        margin: 0;
+      }
+
+      #alert {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <h1>Guess!</h1>
+      <p id="numberRound">
+        Bạn có 10 lượt đoán <br />
+        Khoảng giá trị có thể đoán từ 0 đến 100.
+      </p>
+      <div class="action">
+        <input type="number" id="number" />
+        <button id="guessButton" onclick=clickGuess()>Guest</button>
+        <button style="margin-left: 10px;" id="reset" onclick="clickReset()">Reset</button>
+      </div>
+      <p id="alert"></p>
+      <div class="action">
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="./game.js"></script>
+  </body>
+</html>
